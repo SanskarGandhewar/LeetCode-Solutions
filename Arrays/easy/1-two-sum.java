@@ -3,13 +3,16 @@
 // Link: https://leetcode.com/problems/two-sum/
 // Difficulty: Easy
 
-// Approach:
-// - Use HashMap to store value → index
-// - For each element, check if (target - element) exists
-// - If yes, return indices
+/*
+Approach:
+- Use a HashMap to store value -> index
+- For each element, calculate complement = target - nums[i]
+- If complement exists in map, return indices
+- Otherwise, store current element in map
 
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
 
 import java.util.HashMap;
 
